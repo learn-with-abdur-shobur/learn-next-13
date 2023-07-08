@@ -1,6 +1,10 @@
+import './globals.css';
+import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
+
 export const metadata = {
 	title: 'Learn Next js',
-	description: 'by abdur shobur',
+	description: 'by Abdur Shobur',
 };
 
 export default function RootLayout({
@@ -10,7 +14,11 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body>{children}</body>
+			<body>
+				<Navbar />
+				<main>{children}</main>
+				<Footer />
+			</body>
 		</html>
 	);
 }
